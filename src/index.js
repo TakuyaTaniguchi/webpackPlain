@@ -1,7 +1,12 @@
 import React from 'react'
-import ReactDom from 'react-dom'
+import ReactDOM from 'react-dom'
 import '@babel/polyfill'
 import App from './App'
-import './style.css'
+import './styles.css'
 
-ReactDom.render(<App />, document.getElementById('app'))
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('app')
+)

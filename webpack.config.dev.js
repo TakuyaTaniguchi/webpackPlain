@@ -1,11 +1,10 @@
-const marge = require('webpack-merge')
+const merge = require('webpack-merge')
 const baseConfig = require('./webpack.config.base')
 
-module.exports = marge(baseConfig, {
+module.exports = merge(baseConfig, {
   mode: 'development',
-  //webpackDevserverのoption
   devServer: {
-    port: 8000
+    port: 9000
   },
   devtool: 'source-map'
 })
